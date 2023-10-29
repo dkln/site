@@ -1,0 +1,141 @@
+body {
+  color: #33ccff;
+  font-family: 'Graduate', cursive;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.logo {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  padding: 2px;
+  background: #000;
+  margin: 2px;
+  display: inline-block;
+}
+
+a:hover {
+  color: #33ccff;
+  background: #fff;
+}
+
+span {
+  display: inline-block;
+  padding: 2px;
+  color: #fff;
+  background: #000;
+}
+
+section#main {
+  display: block;
+}
+
+img {
+  display: block;
+}
+
+p {
+  display: block;
+  margin: 0px;
+  color: #333;
+}
+
+p.block {
+  color: #fff;
+}
+
+p.black {
+  color: #000;
+}
+
+ul {
+  display: block;
+  margin: 5px;
+}
+
+ul.tags,
+ul.big-tags {
+  list-style: none;
+  padding: 0;
+}
+
+ul.tags li,
+ul.big-tags li {
+  padding: 2px;
+  margin: 2px;
+  display: inline-block;
+  background-color: #333;
+  color: #33ccff;
+}
+
+ul.tags.links li {
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+
+
+h2 {
+  display: block;
+  font-size: 16px;
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+
+h2.black {
+  background-color: #000;
+  color: #fff;
+}
+
+footer {
+  height: 20px;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: calc(40% - 20px) calc(60% - 20px);
+  grid-gap: 40px;
+  margin: 0 auto;
+  width: 700px;
+}
+
+.split.equal {
+  grid-template-columns: calc(50% - 20px) calc(50% - 20px);
+}
+
+article {
+  margin: 20px 0;
+}
+
+.margin {
+  margin: 20px 0;
+}
+
+.page {
+  position: relative;
+  padding: 40px;
+  height: 100vh;
+  page-break-after: always;
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0.0)), color-stop(100%, rgba(51, 204, 255, 1.0))), url('diagonal-noise.png');
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.0), rgba(51, 204, 255, 1.0)), url('diagonal-noise.png');
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0.0), rgba(51, 204, 255, 1.0)), url('diagonal-noise.png');
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.0), rgba(51, 204, 255, 1.0)), url('diagonal-noise.png');
+  background: linear-gradient(rgba(51, 204, 255, 0.1), rgba(51, 204, 255, 1.0)), url('diagonal-noise.png');
+}
+
+.page-number {
+  display: block;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: #ffffff;
+}

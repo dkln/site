@@ -1,141 +1,218 @@
-body {
-  color: #33ccff;
-  font-family: 'Graduate', cursive;
-  font-size: 16px;
-  text-transform: uppercase;
+/* cv.css — layout and components specific to cv.html.
+   Base styles, variables, tags, timeline, and footer come from index.css. */
+
+/* ── HEADER OVERRIDES ── */
+header {
+  justify-content: space-between;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-.logo {
-  display: block;
-}
-
-a {
+.back-link {
+  font-family: var(--font-display);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  color: var(--muted);
   text-decoration: none;
-  color: #fff;
-  padding: 2px;
-  background: #000;
-  margin: 2px;
-  display: inline-block;
+  flex-shrink: 0;
+  transition: color 0.2s;
 }
 
-a:hover {
-  color: #33ccff;
-  background: #fff;
+.back-link:hover {
+  color: var(--accent);
 }
 
-span {
-  display: inline-block;
-  padding: 2px;
-  color: #fff;
-  background: #000;
+.header-name {
+  font-family: var(--font-display);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--white);
+  flex: 1;
+  text-align: center;
 }
 
-section#main {
-  display: block;
+/* ── LOGO ── */
+.logo-svg-sm {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 0;
+  flex-shrink: 0;
 }
 
-img {
-  display: block;
+/* ── CV HERO ── */
+.cv-hero {
+  margin-top: 52px;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+  padding: 40px 32px;
 }
 
-p {
-  display: block;
-  margin: 0px;
-  color: #333;
-}
-
-p.block {
-  color: #fff;
-}
-
-p.black {
-  color: #000;
-}
-
-ul {
-  display: block;
-  margin: 5px;
-}
-
-ul.tags,
-ul.big-tags {
-  list-style: none;
-  padding: 0;
-}
-
-ul.tags li,
-ul.big-tags li {
-  padding: 2px;
-  margin: 2px;
-  display: inline-block;
-  background-color: #333;
-  color: #33ccff;
-}
-
-ul.tags.links li {
-  padding: 0;
-  margin: 0;
-  background: none;
-}
-
-
-h2 {
-  display: block;
-  font-size: 16px;
-  background-color: #fff;
-  color: #000;
-  padding: 5px;
-}
-
-h2.black {
-  background-color: #000;
-  color: #fff;
-}
-
-footer {
-  height: 20px;
-}
-
-.split {
-  display: grid;
-  grid-template-columns: calc(40% - 20px) calc(60% - 20px);
-  grid-gap: 40px;
+.cv-hero-inner {
+  max-width: 1020px;
   margin: 0 auto;
-  width: 700px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
 }
 
-.split.equal {
-  grid-template-columns: calc(50% - 20px) calc(50% - 20px);
+.cv-hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(18px, 3vw, 30px);
+  color: var(--white);
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
 }
 
-article {
-  margin: 20px 0;
+.cv-title {
+  font-family: var(--font-display);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+  margin-bottom: 12px;
 }
 
-.margin {
-  margin: 20px 0;
+.cv-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  font-size: 12px;
+  color: var(--muted);
 }
 
-.page {
-  position: relative;
-  padding: 40px;
-  height: 100vh;
-  page-break-after: always;
-  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0.0)), color-stop(100%, rgba(51, 204, 255, 1.0))), url('diagonal-noise.png');
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.0), rgba(51, 204, 255, 1.0)), url('diagonal-noise.png');
-  background: -moz-linear-gradient(rgba(0, 0, 0, 0.0), rgba(51, 204, 255, 1.0)), url('diagonal-noise.png');
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.0), rgba(51, 204, 255, 1.0)), url('diagonal-noise.png');
-  background: linear-gradient(rgba(51, 204, 255, 0.1), rgba(51, 204, 255, 1.0)), url('diagonal-noise.png');
+.cv-meta a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s;
 }
 
-.page-number {
-  display: block;
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  color: #ffffff;
+.cv-meta a:hover {
+  color: var(--accent);
+}
+
+/* ── PAGE LAYOUT ── */
+.cv-layout {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 32px 80px;
+  display: grid;
+  grid-template-columns: 256px 1fr;
+  gap: 0 48px;
+  align-items: start;
+}
+
+/* ── SIDEBAR ── */
+.cv-sidebar {
+  position: sticky;
+  top: 52px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  max-height: calc(100vh - 52px);
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.cv-sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.cv-sidebar section {
+  margin-bottom: 40px;
+}
+
+/* ── MAIN ── */
+.cv-main section {
+  padding-top: 48px;
+}
+
+/* ── TIMELINE GROUP ── */
+.timeline-group-label {
+  font-family: var(--font-display);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+  padding-top: 28px;
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+
+/* ── SKILL LIST ── */
+.skill-group-label {
+  font-family: var(--font-display);
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  color: var(--muted);
+  margin: 18px 0 10px;
+}
+
+.skill-group-label:first-child {
+  margin-top: 0;
+}
+
+.skill-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skill-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.skill-name {
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--text-bright);
+  flex: 1;
+}
+
+.skill-dots {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.dot.filled {
+  background: var(--accent);
+}
+
+.dot.empty {
+  background: var(--border);
+}
+
+/* ── EDUCATION ── */
+.edu-entry {
+  margin-bottom: 20px;
+}
+
+.edu-entry:last-child {
+  margin-bottom: 0;
+}
+
+.edu-year {
+  font-family: var(--font-display);
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  margin-bottom: 3px;
+}
+
+.edu-name {
+  font-size: 12px;
+  color: var(--white);
+  margin-bottom: 2px;
+}
+
+.edu-school {
+  font-size: 11px;
+  color: var(--muted);
 }

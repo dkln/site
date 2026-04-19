@@ -1,489 +1,337 @@
-<!-- DOCTYPE -->
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <link href='https://fonts.googleapis.com/css?family=Graduate' rel='stylesheet' type='text/css'>
-    <link href='reset.css' rel='stylesheet' type='text/css'>
-    <link href='index.css' rel='stylesheet' type='text/css'>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="index.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CV — Diederick Lawson</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+    <link href="cv.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>altovista</h1>
 
-    <nav>
-      <ul>
-        <li><a href="index.html">&lt; BACK</a></li>
-      </u>
-    </nav>
+    <header>
+      <a href="index.html" class="back-link">← BACK</a>
+      <span class="header-name">DIEDERICK LAWSON</span>
+      <nav>
+        <a href="#experience">EXPERIENCE</a>
+        <a href="#education">EDUCATION</a>
+        <a href="#skills">SKILLS</a>
+      </nav>
+    </header>
 
-    <section id='main'>
-      <article>
-        <h2 class='black'>DIEDERICK LAWSON</h2>
-        <h2>PERSONAL DETAILS</h2>
-        <p class='black'>
-          44 YEARS<br />
-          LEIDEN<br />
-          THE NETHERLANDS
-        </p>
-      </article>
+    <div class="cv-hero">
+      <div class="cv-hero-inner">
+        <img src="logo.svg" class="logo-svg logo-svg-sm" alt="altovista" />
+        <div>
+          <h1>DIEDERICK LAWSON</h1>
+          <p class="cv-title">TECH LEAD &amp; SENIOR FULL STACK ENGINEER</p>
+          <div class="cv-meta">
+            <span>LEIDEN, THE NETHERLANDS</span>
+            <span>44 YEARS</span>
+            <a href="mailto:diederick@altovista.nl">diederick@altovista.nl</a>
+            <a href="http://www.github.com/dkln">GITHUB</a>
+            <a href="https://www.linkedin.com/in/diederick-lawson-0b250a152/">LINKEDIN</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <article>
-        <h2 class='black'>EDUCATION</h2>
+    <div class="cv-layout">
 
-        <article>
-          <h2>1994 - 1999: HAVO</h2>
-          <p class='black'>
-            ERASMUS COLLEGE ZOETERMEER
-          </p>
-        </article>
+      <!-- SIDEBAR -->
+      <aside class="cv-sidebar">
 
-        <article>
-          <h2>1999 - 2003: HBO</h2>
-          <p class='black'>
-            BACHELOR IN COMPUTER SCIENCE.<br />
-            HAAGSE HOGESCHOOL / TH RIJSWIJK.
-          </p>
-        </article>
-      </article>
+        <section id="skills">
+          <p class="section-label">EXPERTISE</p>
+          <h2 class="section-title">SKILLS</h2>
 
-      <article>
-        <h2 class='black'>WORK EXPERIENCE</h2>
-
-        <article>
-          <h2>2000: INTERNSHIP - DJPA PARTNERSHIP</h2>
-
-          <p class='black'>
-            CREATED A PROJECT PLANNING TOOL DURING MY INTERNSHIP.
-          </p>
-
-          <ul class='tags'>
-            <li>MAC OS 9</li>
-            <li>OSX</li>
-            <li>LINUX</li>
-            <li>PHP</li>
-            <li>VISUAL BASIC</li>
-            <li>MYSQL</li>
-            <li>CVS</li>
+          <p class="skill-group-label">LANGUAGES</p>
+          <ul class="skill-list">
+            <li><span class="skill-name">ELIXIR / ERLANG</span><span class="skill-dots"><i class="dot filled"></i><i class="dot filled"></i><i class="dot filled"></i><i class="dot filled"></i></span></li>
+            <li><span class="skill-name">JAVASCRIPT</span><span class="skill-dots"><i class="dot filled"></i><i class="dot filled"></i><i class="dot filled"></i><i class="dot filled"></i></span></li>
+            <li><span class="skill-name">CSS</span><span class="skill-dots"><i class="dot filled"></i><i class="dot filled"></i><i class="dot filled"></i><i class="dot filled"></i></span></li>
+            <li><span class="skill-name">RUBY</span><span class="skill-dots"><i class="dot filled"></i><i class="dot filled"></i><i class="dot filled"></i><i class="dot filled"></i></span></li>
+            <li><span class="skill-name">GO</span><span class="skill-dots"><i class="dot filled"></i><i class="dot filled"></i><i class="dot filled"></i><i class="dot empty"></i></span></li>
+            <li><span class="skill-name">PYTHON</span><span class="skill-dots"><i class="dot filled"></i><i class="dot filled"></i><i class="dot filled"></i><i class="dot empty"></i></span></li>
+            <li><span class="skill-name">JAVA</span><span class="skill-dots"><i class="dot filled"></i><i class="dot filled"></i><i class="dot empty"></i><i class="dot empty"></i></span></li>
+            <li><span class="skill-name">PHP</span><span class="skill-dots"><i class="dot filled"></i><i class="dot filled"></i><i class="dot empty"></i><i class="dot empty"></i></span></li>
           </ul>
-        </article>
 
-        <article>
-          <h2>2003: INTERNSHIP - E-MARK</h2>
-
-          <p class='black'>
-            THESIS PROJECT. CREATED A DESKTOP APPLICATION FOR MANAGING EXPENSES.
-          </p>
-
-          <ul class='tags'>
-            <li>LINUX</li>
-            <li>PHP</li>
-            <li>VISUAL BASIC</li>
-            <li>MYSQL</li>
-            <li>CVS</li>
+          <p class="skill-group-label">FRAMEWORKS</p>
+          <ul class="skill-list">
+            <li><span class="skill-name">PHOENIX / LIVEVIEW</span><span class="skill-dots"><i class="dot filled"></i><i class="dot filled"></i><i class="dot filled"></i><i class="dot filled"></i></span></li>
+            <li><span class="skill-name">VUEJS</span><span class="skill-dots"><i class="dot filled"></i><i class="dot filled"></i><i class="dot filled"></i><i class="dot filled"></i></span></li>
+            <li><span class="skill-name">GRAPHQL</span><span class="skill-dots"><i class="dot filled"></i><i class="dot filled"></i><i class="dot filled"></i><i class="dot filled"></i></span></li>
+            <li><span class="skill-name">TAILWIND</span><span class="skill-dots"><i class="dot filled"></i><i class="dot filled"></i><i class="dot filled"></i><i class="dot filled"></i></span></li>
+            <li><span class="skill-name">RUBY ON RAILS</span><span class="skill-dots"><i class="dot filled"></i><i class="dot filled"></i><i class="dot filled"></i><i class="dot empty"></i></span></li>
+            <li><span class="skill-name">REACT</span><span class="skill-dots"><i class="dot filled"></i><i class="dot filled"></i><i class="dot filled"></i><i class="dot empty"></i></span></li>
           </ul>
-        </article>
 
-        <article>
-          <h2>2004 - 2006: CENDRIS</h2>
+          <p class="skill-group-label">TOOLS &amp; PLATFORMS</p>
+          <div class="tags">
+            <span class="tag">GIT</span>
+            <span class="tag">DOCKER</span>
+            <span class="tag">KUBERNETES</span>
+            <span class="tag">AWS</span>
+            <span class="tag">GOOGLE CLOUD</span>
+            <span class="tag">AZURE</span>
+            <span class="tag">GITHUB</span>
+            <span class="tag">FIGMA</span>
+            <span class="tag">JIRA</span>
+            <span class="tag">LINEAR</span>
+          </div>
+        </section>
 
-          <p class='black'>
-            STARTED MY CARREER HERE. WINDOWS PC WAS TAKEN AWAY FROM ME AND
-            SWITCHED WITH A SUSE LINUX ONE.
-          </p>
+        <section id="education">
+          <p class="section-label">BACKGROUND</p>
+          <h2 class="section-title">EDUCATION</h2>
 
-          <ul class='tags'>
-            <li>LINUX</li>
-            <li>PHP</li>
-            <li>VISUAL BASIC</li>
-            <li>MYSQL</li>
-            <li>ZEND FRAMEWORK</li>
-            <li>SVN</li>
-            <li>CVS</li>
+          <div class="edu-entry">
+            <p class="edu-year">1999 — 2003</p>
+            <p class="edu-name">BACHELOR IN COMPUTER SCIENCE</p>
+            <p class="edu-school">Haagse Hogeschool / TH Rijswijk</p>
+          </div>
+          <div class="edu-entry">
+            <p class="edu-year">1994 — 1999</p>
+            <p class="edu-name">HAVO</p>
+            <p class="edu-school">Erasmus College Zoetermeer</p>
+          </div>
+        </section>
+
+        <section>
+          <p class="section-label">LANGUAGES</p>
+          <h2 class="section-title">SPOKEN</h2>
+          <ul class="skill-list">
+            <li><span class="skill-name">DUTCH</span><span class="skill-dots"><i class="dot filled"></i><i class="dot filled"></i><i class="dot filled"></i><i class="dot filled"></i></span></li>
+            <li><span class="skill-name">ENGLISH</span><span class="skill-dots"><i class="dot filled"></i><i class="dot filled"></i><i class="dot filled"></i><i class="dot filled"></i></span></li>
           </ul>
-        </article>
+        </section>
 
-        <article>
-          <h2>2006 - 2012: FINALIST IT</h2>
-            <p class='black'>
-              SOFTWARE ENGINEER AND CONSULTANT. WORKED FOR MANY DIFFERENT CLIENTS
-              (FOR EX: PHILIPS, ICTU, GEMEENTE OOSTERHOUT, KENNISNET).
-            </p>
+        <section>
+          <p class="section-label">INTERESTS</p>
+          <h2 class="section-title">HOBBIES</h2>
+          <div class="tags">
+            <span class="tag">PROGRAMMING</span>
+            <span class="tag">BASS GUITAR</span>
+            <span class="tag">BOATING</span>
+            <span class="tag">GAMING</span>
+          </div>
+        </section>
 
-            <ul class='tags'>
-              <li>PHP</li>
-              <li>ZEND FRAMEWORK</li>
-              <li>RUBY</li>
-              <li>RUBY ON RAILS</li>
-              <li>SINATRA</li>
-              <li>SVN</li>
-              <li>GIT</li>
-              <li>JAVASCRIPT</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>RUBY MOTION</li>
-              <li>MACVIM</li>
-              <li>MYSQL</li>
-              <li>LINUX</li>
-              <li>OSX</li>
-              <li>ELASTICSEARCH</li>
-            </ul>
-          </ul>
-        </article>
+      </aside>
 
-        <article>
-          <h2>2012 - 2015: WAKOOPA</h2>
-            <p class='black'>
-              MY FIRST STARTUP EXPERIENCE AS FULL STACK SOFTWARE ENGINEER.
-              IMPLEMENTED THE MOBILE TRACKING SOLUTION (BACKEND &amp; FRONTEND)
-            </p>
+      <!-- MAIN CONTENT -->
+      <main class="cv-main">
 
-            <ul class='tags'>
-              <li>RUBY</li>
-              <li>RUBY ON RAILS</li>
-              <li>JAVASCRIPT</li>
-              <li>EMBER</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>ANDROID</li>
-              <li>JAVA</li>
-              <li>GO</li>
-              <li>IOS</li>
-              <li>OBJECTIVE C</li>
-              <li>MACVIM</li>
-              <li>MYSQL</li>
-              <li>POSTGRESQL</li>
-              <li>LINUX</li>
-              <li>OSX</li>
-              <li>AWS</li>
-              <li>GIT</li>
-              <li>ELASTICSEARCH</li>
-            </ul>
-          </ul>
-        </article>
+        <section id="experience">
+          <p class="section-label">CAREER</p>
+          <h2 class="section-title">WORK EXPERIENCE</h2>
 
-        <article>
-          <h2>2015 - 2016: karma</h2>
-            <p class='black'>
-              full stack software engineer. mainly responsible for all frontend
-              apps (ror + html/css + javascript). worked mainly remote from home
-              office.
-            </p>
+          <div class="timeline">
 
-            <ul class='tags'>
-              <li>ruby</li>
-              <li>ruby on rails</li>
-              <li>javascript</li>
-              <li>html</li>
-              <li>css</li>
-              <li>go</li>
-              <li>git</li>
-              <li>atom</li>
-              <li>macvim</li>
-              <li>mysql</li>
-              <li>postgresql</li>
-              <li>linux</li>
-              <li>osx</li>
-              <li>aws</li>
-            </ul>
-          </ul>
-        </article>
+            <div class="timeline-entry current">
+              <div class="timeline-year">2025 — NOW</div>
+              <div class="timeline-company">CBS</div>
+              <div class="timeline-role">Tech / Team Lead</div>
+              <p class="timeline-desc">Tech/team lead building a new data management platform.</p>
+              <div class="tags">
+                <span class="tag">PYTHON</span><span class="tag">DUCKDB</span><span class="tag">ALEMBIC</span><span class="tag">NODE</span><span class="tag">VUEJS</span><span class="tag">JAVASCRIPT</span><span class="tag">REDIS</span><span class="tag">PARQUET</span><span class="tag">GITOPS</span><span class="tag">ARGOCD</span><span class="tag">AZURE DEVOPS</span>
+              </div>
+            </div>
 
-        <article>
-          <h2>2016 - now: altovista fulltime freelancer</h2>
-          <p class='black'>
-            after Karma, I decided to work fulltime as a freelancer
-          </p>
+            <div class="timeline-entry">
+              <div class="timeline-year">2023 — 2025</div>
+            <div class="timeline-company">WUUNDER</div>
+              <div class="timeline-role">Senior Software Engineer</div>
+              <p class="timeline-desc">Full restructuring of the codebase and establishing a new, maintainable architecture.</p>
+              <div class="tags">
+                <span class="tag">ELIXIR</span><span class="tag">PHOENIX LIVEVIEW</span><span class="tag">JAVASCRIPT</span><span class="tag">TAILWIND</span><span class="tag">POSTGRESQL</span><span class="tag">POSTGIS</span><span class="tag">TIMESCALEDB</span><span class="tag">KUBERNETES</span><span class="tag">AWS</span>
+              </div>
+            </div>
 
-          <ul class='tags'>
-            <li>ruby</li>
-            <li>ruby on rails</li>
-            <li>elixir</li>
-            <li>javascript</li>
-            <li>html</li>
-            <li>css</li>
-            <li>go</li>
-            <li>git</li>
-            <li>atom</li>
-            <li>macvim</li>
-            <li>mysql</li>
-            <li>postgresql</li>
-            <li>linux</li>
-            <li>osx</li>
-            <li>aws</li>
-          </ul>
-        </article>
+            <div class="timeline-entry">
+              <div class="timeline-year">2020 — 2023</div>
+            <div class="timeline-company">WALTER</div>
+              <div class="timeline-role">Full Stack Software Engineer</div>
+              <p class="timeline-desc">Full stack engineer working across the entire Walter platform.</p>
+              <div class="tags">
+                <span class="tag">ELIXIR</span><span class="tag">PHOENIX LIVEVIEW</span><span class="tag">VUE</span><span class="tag">TYPESCRIPT</span><span class="tag">NODE</span><span class="tag">GO</span><span class="tag">POSTGRESQL</span><span class="tag">POSTGIS</span><span class="tag">GOOGLE CLOUD</span>
+              </div>
+            </div>
 
-        <article>
-          <h2>2016: brickparking b.v.</h2>
-          <p class='black'>
-            together with kabisa, supporting the software development
-            team at brickparking b.v.
-          </p>
+            <div class="timeline-group-label">FREELANCE</div>
 
-          <ul class='tags'>
-            <li>ruby</li>
-            <li>ruby on rails</li>
-            <li>javascript</li>
-            <li>android</li>
-            <li>ios</li>
-            <li>cordova</li>
-            <li>html</li>
-            <li>angular</li>
-            <li>postgres</li>
-            <li>postgis</li>
-          </ul>
-        </article>
+            <div class="timeline-entry">
+              <div class="timeline-year">2019</div>
+            <div class="timeline-company">WALTER</div>
+              <div class="timeline-role">Full Stack Software Engineer — Freelance</div>
+              <p class="timeline-desc">Joined Walter as a freelance engineer before transitioning to a permanent role.</p>
+              <div class="tags">
+                <span class="tag">ELIXIR</span><span class="tag">PHOENIX LIVEVIEW</span><span class="tag">VUE</span><span class="tag">TYPESCRIPT</span><span class="tag">POSTGRESQL</span><span class="tag">GOOGLE CLOUD</span>
+              </div>
+            </div>
 
-        <article>
-          <h2>2016 - 2017: traintool</h2>
-          <p class='black'>
-            supporting the software development team at traintool
-          </p>
+            <div class="timeline-entry">
+              <div class="timeline-year">2018</div>
+            <div class="timeline-company">NEDAP HEALTHCARE</div>
+              <div class="timeline-role">Full Stack Software Engineer — Freelance</div>
+              <p class="timeline-desc">Supported the development team with the JavaScript frontend.</p>
+              <div class="tags">
+                <span class="tag">ELIXIR</span><span class="tag">PHOENIX</span><span class="tag">REACT</span><span class="tag">REDUX</span><span class="tag">JAVASCRIPT</span><span class="tag">MYSQL</span>
+              </div>
+            </div>
 
-          <ul class='tags'>
-            <li>ruby</li>
-            <li>ruby on rails</li>
-            <li>javascript</li>
-            <li>android</li>
-            <li>ios</li>
-            <li>cordova</li>
-            <li>html</li>
-            <li>angular</li>
-            <li>mysql</li>
-          </ul>
-        </article>
+            <div class="timeline-entry">
+              <div class="timeline-year">2018</div>
+            <div class="timeline-company">C.G. RECHARGE</div>
+              <div class="timeline-role">Full Stack Software Engineer — Freelance</div>
+              <p class="timeline-desc">Developed a new mobile platform.</p>
+              <div class="tags">
+                <span class="tag">RUBY ON RAILS</span><span class="tag">VUEJS</span><span class="tag">JAVASCRIPT</span><span class="tag">DOCKER</span><span class="tag">POSTGRESQL</span>
+              </div>
+            </div>
 
-        <article>
-          <h2>2016: imbu b.v.</h2>
-          <p class='black'>
-            together with imbu and syntaxis we created a technical portal
-            for engineers
-          </p>
+            <div class="timeline-entry">
+              <div class="timeline-year">2017 — 2019</div>
+            <div class="timeline-company">MIJNDOMEIN</div>
+              <div class="timeline-role">Full Stack Software Engineer — Freelance</div>
+              <p class="timeline-desc">Contributed to various products for the Mijndomein startup team.</p>
+              <div class="tags">
+                <span class="tag">ELIXIR</span><span class="tag">PHOENIX</span><span class="tag">REACT</span><span class="tag">VUEJS</span><span class="tag">WEBPACK</span><span class="tag">GOOGLE CLOUD</span><span class="tag">DOCKER</span><span class="tag">KUBERNETES</span>
+              </div>
+            </div>
 
-          <ul class='tags'>
-            <li>elixir</li>
-            <li>phoenix</li>
-            <li>html</li>
-            <li>css</li>
-            <li>javascript</li>
-            <li>postgres</li>
-          </ul>
-        </article>
+            <div class="timeline-entry">
+              <div class="timeline-year">2017 — 2018</div>
+            <div class="timeline-company">PANOPTA</div>
+              <div class="timeline-role">Full Stack Software Engineer — Freelance</div>
+              <p class="timeline-desc">Proprietary product to assist companies with GDPR incident management.</p>
+              <div class="tags">
+                <span class="tag">ELIXIR</span><span class="tag">PHOENIX</span><span class="tag">REACT</span><span class="tag">GOOGLE CLOUD</span><span class="tag">DOCKER</span><span class="tag">KUBERNETES</span>
+              </div>
+            </div>
 
-        <article>
-          <h2>2017: proffile.co</h2>
-          <p class='black'>
-            working on creating an awesome hr platform
-          </p>
+            <div class="timeline-entry">
+              <div class="timeline-year">2017</div>
+            <div class="timeline-company">PROFFILE.CO</div>
+              <div class="timeline-role">Full Stack Software Engineer — Freelance</div>
+              <p class="timeline-desc">Developed a professional HR platform for a startup.</p>
+              <div class="tags">
+                <span class="tag">ELIXIR</span><span class="tag">PHOENIX</span><span class="tag">REACT</span><span class="tag">DOCKER</span><span class="tag">POSTGRESQL</span>
+              </div>
+            </div>
 
-          <ul class='tags'>
-            <li>elixir</li>
-            <li>phoenix</li>
-            <li>docker</li>
-            <li>html</li>
-            <li>css</li>
-            <li>react</li>
-            <li>javascript</li>
-            <li>postgres</li>
-          </ul>
-        </article>
+            <div class="timeline-entry">
+              <div class="timeline-year">2016 — 2017</div>
+            <div class="timeline-company">TRAINTOOL</div>
+              <div class="timeline-role">Full Stack Software Engineer — Freelance</div>
+              <p class="timeline-desc">Supporting the software development team at Traintool.</p>
+              <div class="tags">
+                <span class="tag">RUBY ON RAILS</span><span class="tag">JAVASCRIPT</span><span class="tag">ANGULAR</span><span class="tag">CORDOVA</span><span class="tag">ANDROID</span><span class="tag">IOS</span><span class="tag">MYSQL</span>
+              </div>
+            </div>
 
-        <article>
-          <h2>2017 - 2019: mijndomein</h2>
-          <p class='black'>
-            working on various products for mijndomein startup team
-          </p>
+            <div class="timeline-entry">
+              <div class="timeline-year">2016</div>
+            <div class="timeline-company">IMBU B.V.</div>
+              <div class="timeline-role">Full Stack Software Engineer — Freelance</div>
+              <p class="timeline-desc">In collaboration with Imbu and Syntaxis, developed a technical portal for engineers.</p>
+              <div class="tags">
+                <span class="tag">ELIXIR</span><span class="tag">PHOENIX</span><span class="tag">JAVASCRIPT</span><span class="tag">POSTGRESQL</span>
+              </div>
+            </div>
 
-          <ul class='tags'>
-            <li>elixir</li>
-            <li>phoenix</li>
-            <li>react</li>
-            <li>vuejs</li>
-            <li>webpack</li>
-            <li>html</li>
-            <li>css</li>
-            <li>javascript</li>
-            <li>postgres</li>
-            <li>google cloud</li>
-            <li>docker</li>
-            <li>kubernetes</li>
-          </ul>
-        </article>
+            <div class="timeline-entry">
+              <div class="timeline-year">2016</div>
+            <div class="timeline-company">BRICKPARKING B.V.</div>
+              <div class="timeline-role">Full Stack Software Engineer — Freelance</div>
+              <p class="timeline-desc">In collaboration with Kabisa, supporting the software development team.</p>
+              <div class="tags">
+                <span class="tag">RUBY ON RAILS</span><span class="tag">JAVASCRIPT</span><span class="tag">ANGULAR</span><span class="tag">CORDOVA</span><span class="tag">ANDROID</span><span class="tag">IOS</span>
+              </div>
+            </div>
 
+            <div class="timeline-group-label">EARLIER CAREER</div>
 
-        <article>
-          <h2>2017 - 2018: panopta</h2>
-          <p class='black'>
-            own product that supports companies with incident management for the new gdpr law
-          </p>
+            <div class="timeline-entry">
+              <div class="timeline-year">2015 — 2016</div>
+            <div class="timeline-company">KARMA</div>
+              <div class="timeline-role">Full Stack Software Engineer</div>
+              <p class="timeline-desc">Primarily responsible for all frontend applications. Worked remotely from a home office (New York office).</p>
+              <div class="tags">
+                <span class="tag">RUBY ON RAILS</span><span class="tag">JAVASCRIPT</span><span class="tag">GO</span><span class="tag">MYSQL</span><span class="tag">POSTGRESQL</span><span class="tag">AWS</span>
+              </div>
+            </div>
 
-          <ul class='tags'>
-            <li>elixir</li>
-            <li>phoenix</li>
-            <li>google cloud</li>
-            <li>docker</li>
-            <li>kubernetes</li>
-            <li>html</li>
-            <li>react</li>
-            <li>webpack</li>
-            <li>css</li>
-            <li>javascript</li>
-            <li>postgres</li>
-          </ul>
-        </article>
+            <div class="timeline-entry">
+              <div class="timeline-year">2012 — 2015</div>
+            <div class="timeline-company">WAKOOPA</div>
+              <div class="timeline-role">Full Stack Software Engineer</div>
+              <p class="timeline-desc">First startup experience. Implemented the mobile tracking solution (backend &amp; frontend).</p>
+              <div class="tags">
+                <span class="tag">RUBY ON RAILS</span><span class="tag">JAVASCRIPT</span><span class="tag">EMBER</span><span class="tag">ANDROID</span><span class="tag">IOS</span><span class="tag">GO</span><span class="tag">POSTGRESQL</span><span class="tag">AWS</span>
+              </div>
+            </div>
 
-        <article>
-          <h2>2018: c.g. recharge</h2>
-          <p class='black'>
-            building a new mobile experience
-          </p>
+            <div class="timeline-entry">
+              <div class="timeline-year">2006 — 2012</div>
+            <div class="timeline-company">FINALIST IT</div>
+              <div class="timeline-role">Software Engineer &amp; Consultant</div>
+              <p class="timeline-desc">Worked for many different clients on a staffing and project basis, including Philips, ICTU, Gemeente Oosterhout, and Kennisnet.</p>
+              <div class="tags">
+                <span class="tag">PHP</span><span class="tag">ZEND FRAMEWORK</span><span class="tag">RUBY ON RAILS</span><span class="tag">JAVASCRIPT</span><span class="tag">ELASTICSEARCH</span><span class="tag">MYSQL</span>
+              </div>
+            </div>
 
-          <ul class='tags'>
-            <li>ruby</li>
-            <li>rails</li>
-            <li>docker</li>
-            <li>html</li>
-            <li>css</li>
-            <li>vuejs</li>
-            <li>webpack</li>
-            <li>javascript</li>
-            <li>postgres</li>
-          </ul>
-        </article>
+            <div class="timeline-entry">
+              <div class="timeline-year">2004 — 2006</div>
+            <div class="timeline-company">CENDRIS</div>
+              <div class="timeline-role">Software Engineer</div>
+              <p class="timeline-desc">Started my career here. Focused on web application development after an initial period in print management.</p>
+              <div class="tags">
+                <span class="tag">PHP</span><span class="tag">ZEND FRAMEWORK</span><span class="tag">LINUX</span><span class="tag">MYSQL</span>
+              </div>
+            </div>
 
-        <article>
-          <h2>2018: nedap healthcare</h2>
-          <p class='black'>
-            supporting the development team with javascript frontend
-          </p>
+            <div class="timeline-entry">
+              <div class="timeline-year">2003</div>
+            <div class="timeline-company">E-MARK</div>
+              <div class="timeline-role">Internship</div>
+              <p class="timeline-desc">Thesis project. Desktop application for managing expenses, invoices, and subscriptions.</p>
+              <div class="tags">
+                <span class="tag">PHP</span><span class="tag">VISUAL BASIC</span><span class="tag">MYSQL</span>
+              </div>
+            </div>
 
-          <ul class='tags'>
-            <li>elixir</li>
-            <li>phoenix</li>
-            <li>react</li>
-            <li>redux</li>
-            <li>javascript</li>
-            <li>mysql</li>
-          </ul>
-        </article>
-      </article>
-        <article>
-          <h2>2016 - now: altovista fulltime freelancer</h2>
-          <p class='black'>
-            after Karma, I decided to work fulltime as a freelancer
-          </p>
+            <div class="timeline-entry">
+              <div class="timeline-year">2000</div>
+            <div class="timeline-company">DJPA PARTNERSHIP</div>
+              <div class="timeline-role">Internship</div>
+              <p class="timeline-desc">Created a project planning tool and dashboard for supporting the sales team.</p>
+              <div class="tags">
+                <span class="tag">PHP</span><span class="tag">VISUAL BASIC</span><span class="tag">MYSQL</span>
+              </div>
+            </div>
 
-          <ul class='tags'>
-            <li>ruby</li>
-            <li>ruby on rails</li>
-            <li>elixir</li>
-            <li>javascript</li>
-            <li>html</li>
-            <li>css</li>
-            <li>go</li>
-            <li>git</li>
-            <li>atom</li>
-            <li>macvim</li>
-            <li>mysql</li>
-            <li>postgresql</li>
-            <li>linux</li>
-            <li>osx</li>
-            <li>aws</li>
-          </ul>
-        </article>
+          </div>
+        </section>
 
-        <article>
-          <h2>2019 - 2023: walter</h2>
-          <p class='black'>
-            full stack software engineer
-          </p>
+      </main>
+    </div>
 
-          <ul class='tags'>
-            <li>elixir</li>
-            <li>phoenix liveview</li>
-            <li>node</li>
-            <li>vue</li>
-            <li>typescript</li>
-            <li>javascript</li>
-            <li>html</li>
-            <li>css</li>
-            <li>go</li>
-            <li>git</li>
-            <li>macvim</li>
-            <li>postgresql</li>
-            <li>postgis</li>
-            <li>linux</li>
-            <li>osx</li>
-            <li>google cloud</li>
-          </ul>
-        </article>
+    <footer>
+      <span>DIEDERICK LAWSON &mdash; ALTOVISTA &mdash; LEIDEN, NL</span>
+    </footer>
 
-        <article>
-          <h2>2023 - 2025: wuunder</h2>
-          <p class='black'>
-            senior software developer
-          </p>
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+        { threshold: 0.05 }
+      );
+      document.querySelectorAll('.timeline-entry').forEach(el => observer.observe(el));
+    </script>
 
-          <ul class='tags'>
-            <li>elixir</li>
-            <li>phoenix liveview</li>
-            <li>javascript</li>
-            <li>kubernetes</li>
-            <li>ai</li>
-            <li>html</li>
-            <li>css</li>
-            <li>git</li>
-            <li>macvim</li>
-            <li>postgresql</li>
-            <li>postgis</li>
-            <li>timescaledb</li>
-            <li>linux</li>
-            <li>osx</li>
-            <li>aws</li>
-          </ul>
-        </article>
-
-        <article>
-          <h2>2025 - now: cbs</h2>
-          <p class='black'>
-            tech/team lead building new data management platform
-          </p>
-
-          <ul class='tags'>
-            <li>python</li>
-            <li>duckdb</li>
-            <li>alembic</li>
-            <li>node</li>
-            <li>javascript</li>
-            <li>vuejs</li>
-            <li>html</li>
-            <li>css</li>
-            <li>git</li>
-            <li>redis</li>
-            <li>parquet</li>
-            <li>windows</li>
-            <li>gitops</li>
-            <li>argocd</li>
-            <li>azure devops</li>
-          </ul>
-        </article>
-
-      <article>
-        <h2>HOBBIES</h2>
-
-        <p class='block'>
-          SO MUCH STUFF TO DO IN SO LITTLE TIME. THINGS I LIKE TO DO:
-        </p>
-
-        <ul class='tags'>
-          <li>PROGRAMMING, FIDDLING AROUND WITH NEW TOOLS AND LANGUAGES</li>
-          <li>GAMING</li>
-          <li>BOATING</li>
-          <li>BASS GUITAR</li>
-        </ul>
-      </article>
-
-    </section>
-    <footer />
   </body>
 </html>

@@ -100,17 +100,8 @@ header {
 
 /* ── SIDEBAR ── */
 .cv-sidebar {
-  position: sticky;
-  top: 52px;
   padding-top: 48px;
   padding-bottom: 48px;
-  max-height: calc(100vh - 52px);
-  overflow-y: auto;
-  scrollbar-width: none;
-}
-
-.cv-sidebar::-webkit-scrollbar {
-  display: none;
 }
 
 .cv-sidebar section {

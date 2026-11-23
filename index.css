@@ -8,8 +8,8 @@
   --text-bright: #ececec;
   --muted: #888888;
   --white: #ffffff;
-  --font-display: "Graduate", cursive;
-  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  --font-body: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --max: 740px;
 }
 
@@ -28,7 +28,8 @@ body {
   color: var(--text);
   font-family: var(--font-body);
   font-size: 17px;
-  line-height: 1.75;
+  line-height: 1.85;
+  letter-spacing: 0.01em;
 }
 
 /* ── HEADER ── */
@@ -115,23 +116,12 @@ header nav a:hover {
 }
 
 #hero-bg {
-  position: absolute;
+  position: fixed;
   inset: 0;
   width: 100%;
   height: 100%;
   pointer-events: none;
-  z-index: 0;
-}
-
-.hero-fade {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 280px;
-  background: linear-gradient(to bottom, transparent, var(--bg));
-  pointer-events: none;
-  z-index: 1;
+  z-index: -1;
 }
 
 .hero-content {
@@ -144,6 +134,7 @@ header nav a:hover {
 
 
 #hero h1 {
+  font-weight: 700;
   font-family: var(--font-display);
   font-size: clamp(14px, 2.5vw, 22px);
   color: var(--white);
@@ -210,6 +201,7 @@ section {
 }
 
 .section-title {
+  font-weight: 700;
   font-family: var(--font-display);
   font-size: 24px;
   color: var(--white);
@@ -222,7 +214,7 @@ section {
 /* ── ABOUT ── */
 .about-body p {
   color: var(--text-bright);
-  margin-bottom: 18px;
+  margin-bottom: 24px;
   font-size: 17px;
 }
 
@@ -233,8 +225,8 @@ section {
 /* ── STACK ── */
 .stack-group-label {
   font-family: var(--font-display);
-  font-size: 10px;
-  letter-spacing: 0.18em;
+  font-size: 11px;
+  letter-spacing: 0.16em;
   color: var(--muted);
   margin: 24px 0 10px;
 }
@@ -252,7 +244,7 @@ section {
 
 .skill-group-label {
   font-family: var(--font-display);
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.16em;
   color: var(--muted);
   margin: 18px 0 10px;
@@ -330,8 +322,8 @@ section {
 /* ── TIMELINE GROUP ── */
 .timeline-group-label {
   font-family: var(--font-display);
-  font-size: 10px;
-  letter-spacing: 0.2em;
+  font-size: 11px;
+  letter-spacing: 0.16em;
   color: var(--muted);
   border-top: 1px solid var(--border);
   padding-top: 28px;
@@ -387,21 +379,22 @@ section {
   font-size: 11px;
   letter-spacing: 0.12em;
   color: var(--accent);
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
 
 .timeline-company {
+  font-weight: 500;
   font-family: var(--font-display);
   font-size: 17px;
   letter-spacing: 0.04em;
   color: var(--white);
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 
 .timeline-role {
   font-size: 14px;
   color: var(--muted);
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   letter-spacing: 0.02em;
 }
 
@@ -412,7 +405,7 @@ section {
 }
 
 .timeline-entry .tags {
-  margin-top: 8px;
+  margin-top: 14px;
 }
 
 /* ── WORK ── */
@@ -424,8 +417,8 @@ section {
 
 .work-links a {
   font-family: var(--font-display);
-  font-size: 10px;
-  letter-spacing: 0.08em;
+  font-size: 11px;
+  letter-spacing: 0.12em;
   padding: 7px 13px;
   border: 1px solid var(--border);
   color: var(--muted);
@@ -476,7 +469,7 @@ footer {
   border-top: 1px solid var(--border);
   font-family: var(--font-display);
   font-size: 11px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   color: var(--muted);
 }
 

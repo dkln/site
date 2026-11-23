@@ -1,0 +1,3 @@
+# contains address, phone number and date of birth: never publish from this repo
+cv_pdf_download.html
+*.pdf

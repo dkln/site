@@ -1,4 +1,4 @@
-/* cv.css — layout and components specific to cv.html.
+/* cv.css: layout and components specific to cv.html.
    Base styles, variables, tags, timeline, and footer come from index.css. */
 
 /* ── HEADER OVERRIDES ── */
@@ -8,11 +8,12 @@ header {
 
 .back-link {
   font-family: var(--font-display);
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.12em;
   color: var(--muted);
   text-decoration: none;
-  flex-shrink: 0;
+  /* fills the gap up to the content margin of .cv-layout (1020px / 2 - 32px padding) */
+  flex: 0 0 max(71px, calc(50% - 478px));
   transition: color 0.2s;
 }
 
@@ -23,10 +24,10 @@ header {
 .header-name {
   font-family: var(--font-display);
   font-size: 11px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   color: var(--white);
   flex: 1;
-  text-align: center;
+  text-align: left;
 }
 
 /* ── LOGO ── */
@@ -46,16 +47,23 @@ header {
 }
 
 .cv-hero-inner {
-  max-width: 1020px;
+  --name-size: clamp(18px, 3vw, 30px);
+  max-width: 956px; /* .cv-layout width minus its 32px side padding */
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 28px;
 }
 
+/* drop the logo to the cap height of the name (line-height 1.85, JetBrains Mono metrics) */
+.cv-hero-inner .logo-svg-sm {
+  margin-top: calc(var(--name-size) * 0.555);
+}
+
 .cv-hero h1 {
+  font-weight: 700;
   font-family: var(--font-display);
-  font-size: clamp(18px, 3vw, 30px);
+  font-size: var(--name-size);
   color: var(--white);
   letter-spacing: 0.06em;
   margin-bottom: 6px;
@@ -63,7 +71,7 @@ header {
 
 .cv-title {
   font-family: var(--font-display);
-  font-size: 10px;
+  font-size: 13px;
   letter-spacing: 0.18em;
   color: var(--accent);
   margin-bottom: 12px;
@@ -73,7 +81,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   gap: 4px 16px;
-  font-size: 12px;
+  font-size: 13px;
   color: var(--muted);
 }
 
@@ -118,8 +126,8 @@ header {
 /* ── TIMELINE GROUP ── */
 .timeline-group-label {
   font-family: var(--font-display);
-  font-size: 10px;
-  letter-spacing: 0.2em;
+  font-size: 11px;
+  letter-spacing: 0.16em;
   color: var(--muted);
   border-top: 1px solid var(--border);
   padding-top: 28px;
@@ -130,7 +138,7 @@ header {
 /* ── SKILL LIST ── */
 .skill-group-label {
   font-family: var(--font-display);
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.16em;
   color: var(--muted);
   margin: 18px 0 10px;
@@ -155,7 +163,7 @@ header {
 }
 
 .skill-name {
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.04em;
   color: var(--text-bright);
   flex: 1;
@@ -193,19 +201,19 @@ header {
 
 .edu-year {
   font-family: var(--font-display);
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.12em;
   color: var(--accent);
   margin-bottom: 3px;
 }
 
 .edu-name {
-  font-size: 12px;
+  font-size: 13px;
   color: var(--white);
   margin-bottom: 2px;
 }
 
 .edu-school {
-  font-size: 11px;
+  font-size: 12px;
   color: var(--muted);
 }
